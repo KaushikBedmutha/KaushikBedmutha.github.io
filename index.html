@@ -1,315 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Portfolio Website-Kaushik</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <title>Portfolio_Website - Kaushik</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- load javascript after loading all html content -->
-  <script src="script/script.js"></script>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-      <div class="container">
-     
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#services">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-              </ul>
-              
-          </div>
-      </div>
-  </nav>
-  <section class="bgimage" id="home">
-    <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Hi, it's me Kaushik</h2>
-            <p class="hero_desc">I am a Student at DBIT(Mumbai)</p>
-        </div>
-        </div>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-</section>
-
-<!-- about section-->
-<section id="about">
-  <div class="container mt-4 pt-4">
-      <h1 class="text-center">About Me</h1>
-      <div class="row mt-4">
-          <div class="col-lg-4">
-              <img src="images/Profile Picture .png" class= "imageAboutPage" alt="">
-          </div>
-
-          <div class="col-lg-8">
-              <!-- <p> I am currently pursuing a degree in computer science. I'm passionate coder having good problem solving skills and particularly interested in how Software Engineering can be used in the industry.
-                
-                  
-              </p> -->
-              <div class="row mt-3">
-                  <div class="col-md-6">
-                      <ul>
-                          <li>Name: Kaushik</li>
-                          <li>Age: 20</li>
-                          <li>College: Don Bosco Institue of technology</li>
-
-                      </ul>
-                  </div>
-                  <div class="col-md-6">
-                      <ul>
-                          <li>Field: Computer Science</li>
-                          <li>Nationality : India</li>
-                          <li>Interest: Competative Programming</li>
-
-                      </ul>
-                  </div>
-              </div>
-              <div class="row mt-3">
-                  <p> Hi, I am Kaushik Bedmutha, a Student at Don bosco Institue of technology. Currently pursuing a degree in computer science. I'm passionate coder having good problem solving skills and particularly interested in how Software Engineering can be used in the industry.. I love learning new technologies and tools that can help me improve my skills and deliver better results. Other than that, my interest includes Music , Sports and Travel.
-                  </p>
-              </div>
-          </div>
-      </div>
-</section>
-
-<!-- services section-->
-<section id="services">
-  <div class="container">
-      <h1 class="text-center">Skills</h1>
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class="fas servicesIcon fa-clock"></i>
-                      <h4 class="card-title mt-3">Website Development</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class='fas servicesIcon fa-layer-group'></i>
-                      <h4 class="card-title mt-3">Website Design</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class='far servicesIcon fa-check-circle'></i>
-                      <h4 class="card-title mt-3">Android Deployment</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
-      </div>
-
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class='fas servicesIcon fa-search'></i>
-                      <h4 class="card-title mt-3">Statistics</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class='fas servicesIcon fa-shield-alt'></i>
-                      <h4 class="card-title mt-3">Data Science</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class='fas servicesIcon fa-wrench'></i>
-                      <h4 class="card-title mt-3">Competative Programming </h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
-      </div>
   </div>
-</section>
+  <!-- Spinner End -->
 
-
-<!-- portfolio section-->
-<section id="portfolio">
-  <div class="container mt-3">
-      <h1 class="text-center">Portfolio</h1>
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card">
-                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">YouTube Clone</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Kaushik Bedmutha</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Portfolio</a>
+          <div class="dropdown-menu fade-down m-0">
+            <a href="#skills" class="dropdown-item">Skills</a>
+            <a href="#projects" class="dropdown-item">Projects</a>
+            <a href="#certifications" class="dropdown-item">Certifications</a>
+            <a href="#AI" class="dropdown-item">Achievements & Initiatives</a>
           </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Quiz App</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Product Landing Page</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
       </div>
-      <br>
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Messaging Service</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
 
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Twitter Clone</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/bg3.jpg" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(29, 34, 61, 0.7)">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h1 class="display-3 text-white animated slideInDown">
+                  Computer Engineer
+                </h1>
 
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Blog App</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
+                <p class="fs-5 text-white mb-4 pb-2">
+                  Don Bosco Institute Of Technology,Mumbai
+                </p>
+                <a href="https://github.com/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Git
+                  Hub</a>
+                <a href="https://www.linkedin.com/in/kaushik-bedmutha-1730ba202/"
+                  class="btn btn-light py-md-3 px-md-5 animated slideInRight">Linkdien</a>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-</section>
+    </div>
+  </div>
+  <!-- Carousel End -->
 
-<!-- contact section-->
-<section id="contact">
-  <div class="container mt-3 contactContent">
-      <h1 class="text-center">Contact Me</h1>
+  <!-- About Start -->
+  <div class="container-xxl py-5" id="about">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+          <div class="position-relative h-100">
+            <img class="img-fluid position-absolute w-200 h-100" src="kosh2.jpg" alt="" style="object-fit: cover" />
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h6 class="section-title bg-white text-start text-primary pe-3"></h6>
+          <h1 class="mb-4">Learn More About me</h1>
+          <p class="mb-4">
+            Passionate coder having good problem-solving skills and particularly interested in Software Engineering
+            domain.You shall find! Responsible, hardworking, dedicated, trustworthy and committed to work on new
+            technologies and projects
+          <div class="row gy-2 gx-4 mb-4">
+            <div class="col-sm-6">
+              <p class="mb-0">
+                <i class="fa fa-arrow-right text-primary me-2"></i>Name: Kaushik Bedmutha
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0">
+                <i class="fa fa-arrow-right text-primary me-2"></i>City: Mumbai, India
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0">
+                <i class="fa fa-arrow-right text-primary me-2"></i>Degree: Bachelor of Engineering
+              </p>
+            </div>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="Kaushik - 2.pdf">Download my Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
 
 
-      <div class="row mt-4">
+
+
+    <!-- Skills Start -->
+    <div class="container-xxl py-5 category" id="skills">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3"></h6>
+          <h1 class="mb-5">Skills</h1>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  class="position-relative d-block overflow-hidden">
+                  <img class="img-fluid" src="img/img2.png" alt="" />
+                  <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                    <h5 class="m-0">Competative Programming</h5>
+                    <small class="text-primary">500+ problem</small>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden">
+                  <img class="img-fluid" src="img/img4.jpg" alt="" />
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden">
+                  <img class="img-fluid" src="img/img3.webp" alt="" />
+                  <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                    <h6 class="m-0">Software Development</h6>
+                    <small class="text-primary"></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px">
+            <a class="position-relative d-block h-100 overflow-hidden">
+              <img class="img-fluid position-absolute w-100 h-100" src="img/img5.jpeg" alt="" style="object-fit: cover" />
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Data Analyst</h5>
+                <small class="text-primary"></small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills Start -->
+
+    <!-- Project Start -->
+    <div class="container-xxl py-5" id="projects">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3"></h6>
+          <h1 class="mb-5">Projects</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/demo.png" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Car Price Prediction</h5>
+                <!-- <small></small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/img 2.png" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Password Manager</h5>
+                <!-- <small></small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/ipl.png" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">IPL Data Analysis</h5>
+                <!-- <small>Professor</small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/ct1.png" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Covid Tracker</h5>
+                <!-- <small>Professor</small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/cc.jpeg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">College Cam Scanner</h5>
+                <!-- <small>Project Co-ordinator</small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/zg.png" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">2d Zombie game</h5>
+                <!-- <small>HOD</small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/tt.jpg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Task Manager</h5>
+                <!-- <small>Designation</small> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item bg-light">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/st.jpg" alt="">
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Stress Detection System</h5>
+                <!-- <small>Designation</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+
+
+    <!-- Certifications Start -->
+
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" id="certifications">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title bg-white text-center text-primary px-3"></h6>
+          <h1 class="mb-5">Certifications</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+          <div class="testimonial-item text-center">
+            <h5 class="mb-0">Python with Data Analysis</h5>
+            <p>Shape AI</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint quaerat voluptatibus laborum,
+                deleniti alias quo natus similique rerum aut blanditiis, veritatis nesciunt porro odit quasi dolor, at
+                error possimus.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <h5 class="mb-0">Web Development</h5>
+            <p>ACM-DBIT</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint quaerat voluptatibus laborum,
+                deleniti alias quo natus similique rerum aut blanditiis, veritatis nesciunt porro odit quasi dolor, at
+                error possimus.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <h5 class="mb-0">Scrum Fundamantals</h5>
+            <p>scrum</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint quaerat voluptatibus laborum,
+                deleniti alias quo natus similique rerum aut blanditiis, veritatis nesciunt porro odit quasi dolor, at
+                error possimus.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="testimonial-item text-center">
+            <h5 class="mb-0">Khushi</h5>
+            <p>Student</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                I recently came across this website and I must say it has been a game-changer for me. As a student, I
+                struggle to keep up with my coursework and sometimes find it difficult to understand certain concepts.
+                The quizes and resources are well-organized and easy to navigate, and the explanations are clear and
+                concise.
+              </p>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Certifications End -->
+
+  <!-- Achievements & Initiatives Start -->
+
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s" id="AI">
+        <h6 class="section-title bg-white text-center text-primary px-3"></h6>
+        <h1 class="mb-5">Achievements & Initiatives</h1>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                  <h5 class="mb-3">Contributer at Hacktoberfest 2022</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                  <h5 class="mb-3">Milestone 1 at GCFP</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                  <h5 class="mb-3">Level 1 Badge at GCSP</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                  <h5 class="mb-3">Level 2 Badge at GCSP</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                  <h5 class="mb-3">5 star coder at Hackerrank</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                  <h5 class="mb-3">Codechef max rating - 1450</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                  <h5 class="mb-3">Solve 100+ problem Leetcode</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item text-center pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                  <h5 class="mb-3">WCE hackathon with team Genesis</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Achievements & Initiatives End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s" id="contact">
+          <h6 class="section-title bg-white text-center text-primary px-3"></h6>
+          <h1 class="mb-5">Contact Me</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h5>Get In Touch</h5>
+            <div class="d-flex align-items-center mb-3">
+              <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                style="width: 50px; height: 50px;">
+                <i class="fa fa-map-marker-alt text-white"></i>
+              </div>
+              <div class="ms-3">
+                <h5 class="text-primary">My Address</h5>
+                <p class="mb-0">Mumbai , Maharashtra, India</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                style="width: 50px; height: 50px;">
+                <i class="fa fa-phone-alt text-white"></i>
+              </div>
+              <div class="ms-3">
+                <h5 class="text-primary">Mobile</h5>
+                <p class="mb-0">9022393922</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                style="width: 50px; height: 50px;">
+                <i class="fa fa-envelope-open text-white"></i>
+              </div>
+              <div class="ms-3">
+                <h5 class="text-primary">Email</h5>
+                <p class="mb-0">kaushik23bedmutha@gmail.com</p>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-6">
-              <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-              
-      <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;"><div id="google-maps-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Mumbai,+Maharashtra,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="my-codefor-googlemap" href="https://www.bootstrapskins.com/themes" id="authorize-maps-data"></a><style>#google-maps-display img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+            <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+            <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;padding:10px">
+              <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                  style="height:100%;width:100%;border:0;" frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=Mumbai,+Maharashtra,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+              </div><a class="my-codefor-googlemap" href="https://www.bootstrapskins.com/themes"
+                id="authorize-maps-data"></a>
+              <style>
+                #google-maps-display img {
+                  max-height: none;
+                  max-width: none !important;
+                  background: none !important;
+                }
+              </style>
+            </div>
           </div>
-
-          <div class="col-lg-6">
-              <!-- form fields -->
-              <form>
-                  <input type="text" class="form-control form-control-lg" placeholder="Name">
-                  <input type="email" class="form-control mt-3" placeholder="Email">
-                  <input type="text" class="form-control mt-3" placeholder="Subject">
-                  <div class="mb-3 mt-3">
-                      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                  </div>
-              </form>
-              <button type="button" class="btn btn-success mt-3">Contact Me</button>
-              
-          </div>
-
+        </div>
       </div>
-  </div>
-</section>
-
- <!-- footer section-->
- <footer id="footer">
-  <div class="container-fluid">
-      <!-- social media icons -->
-      <div class="social-icons mt-4">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-      </div>
-  </div>
-</footer>
+    </div>
+    <!-- Contact End -->
 
 
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
